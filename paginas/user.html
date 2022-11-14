@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">
+                <img src="../imagenes/logopng.png" alt="logo">
+            </a>
+            <ul class="menu">
+                <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a href="./agentes.html">Agentes</a></li>
+                <li class="nav-item"><a href="./arsenal.html">Arsenal</a></li>
+                <li class="nav-item"><a href="./mapas.html">Mapas</a></li>
+                <li class="nav-item active"><a href="./user.html">Usuario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="principal">
+        <h1>USUARIO</h1>
+        <h2 class="sub">Crea una cuenta o inicia sesión</h2>
+    </section>
+
+    <main>
+        <form action="" method="">
+            <fieldset class="completuser">
+                <legend class="preparate">Prepárate para jugar</legend>
+
+                <section class="completar">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" required>
+
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" name="" id="email">
+
+                    <label for="nombre">Nombre de usuario:</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre de usuario" required>
+
+                    <label for="pass">Contraseña</label>
+                    <input type="password" name="pass" id="pass">
+
+                    <label for="paises">Elija un país:</label>
+                    <select name="paises" id="paises">
+                        <option value="arg">Argentina</option>
+                        <option value="chi">Chile</option>
+                        <option value="uru">Uruguay</option>
+                        <option value="col">Colombia</option>
+                        <option value="par">Paraguay</option>
+                        <option value="ecu">Ecuador</option>
+                        <option value="br">Brasil</option>
+                        <option value="bol">Bolivia</option>
+                        <option value="ven">Venezuela</option>
+                    </select>
+                </section>
+
+                <section class="finalcomplet">
+                    <div>
+                        <label for="news">Términos y Condiciones</label>
+                        <input type="checkbox" name="acepta" id="terycond">
+                    </div>
+                    <div>
+                        <label for="news">Recibe Newsletter</label>
+                        <input type="checkbox" name="acepta" id="news">
+                    </div>
+                </section>
+            </fieldset>
+            <div class="submitButtonContainer">
+                <button class="glow-on-hover" type="submit" id="enviar">Enviar ahora</button>
+            </div>
+        </form>
+    </main>
+
+    <!--AYUDA-->
+    <ul class="abajo">
+        <li><a href="ayuda.html">Ayuda</a></li>
+    </ul>
+
+    <!--Footer-->
+    <footer>
+        <div>
+            <h2>VALORANT</h2>
+            <p class="copy">Copyright &copy; 2022</p>
+        </div>
+    </footer>
+</body>
+
+</html>
