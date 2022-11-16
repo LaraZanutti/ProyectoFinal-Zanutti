@@ -7,24 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
                 <img src="./imagenes/logopng.png" alt="logo">
             </a>
-            <ul class="menu">
-                <li class="nav-item active"><a href="index.html">Inicio</a></li>
-                <li class="nav-item"><a href="./paginas/agentes.html">Agentes</a></li>
-                <li class="nav-item"><a href="./paginas/arsenal.html">Arsenal</a></li>
-                <li class="nav-item"><a href="./paginas/mapas.html">Mapas</a></li>
-                <li class="nav-item"><a href="./paginas/user.html">Usuario</a></li>
-            </ul>
-        </nav>
-    </header>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center" href="./paginas/agentes.html">Agentes</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center" href="./paginas/arsenal.html">Arsenal</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center" href="./paginas/mapas.html">Mapas</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center" href="./paginas/user.html">Usuario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <section id="principal">
         <h1>VALORANT</h1>
@@ -32,68 +53,78 @@
             por Riot Games. </h2>
     </section>
 
-    <main class="juegos">
-        <h2 class="text">FORMAS DE JUEGO</h2>
-        <div class="formas">
-            <div class="caja">
-                <h3 class="titulo-caja">NORMAL</h3>
-                <p class="explicacion">
-                    Jugabilidad estándar de Valorant. Alterna entre atacar y defender sitios. El primero en
-                    ganar 13 rondas se llevará la victoria.
-                </p>
+    <div class="container">
+        <div class="juegos pb-4">
+            <h2 class="text">FORMAS DE JUEGO</h2>
+            <div class="row justify-content-around mb-4">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 justify-content-center">
+                    <div class="caja">
+                        <h3 class="titulo-caja text-center">NORMAL</h3>
+                        <p class="explicacion text-center">
+                            Jugabilidad estándar de Valorant. Alterna entre atacar y defender sitios. El primero en
+                            ganar 13 rondas se llevará la victoria.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 justify-content-center">
+                    <div class="caja">
+                        <h3 class="titulo-caja text-center">COMPETITIVO</h3>
+                        <p class="explicacion text-center">
+                            Jugabilidad estándar de Valorant. Tiene las mismas reglas que el modo normal, pero con
+                            mucho más en juego. Competirás por aumentar de rango.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 justify-content-center">
+                    <div class="caja">
+                        <h3 class="titulo-caja text-center">SPIKE RUSH</h3>
+                        <p class="explicacion text-center">
+                            Jugabilidad más corta y con menor riesgo de Valorant. Tiene las mismas reglas que el
+                            modo normal, pero con orbes de poder y equipamientos de armas aleatorios. El primero en
+                            ganar 4
+                            rondas
+                            se
+                            llevará la victoria.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="caja">
-                <h3 class="titulo-caja">COMPETITIVO</h3>
-                <p class="explicacion">
-                    Jugabilidad estándar de Valorant. Tiene las mismas reglas que el modo normal, pero con
-                    mucho más en juego. Competirás por aumentar de rango.
-                </p>
-            </div>
-            <div class="caja">
-                <h3 class="titulo-caja">SPIKE RUSH</h3>
-                <p class="explicacion">
-                    Jugabilidad más corta y con menor riesgo de Valorant. Tiene las mismas reglas que el
-                    modo normal, pero con orbes de poder y equipamientos de armas aleatorios. El primero en ganar 4
-                    rondas
-                    se
-                    llevará la victoria.
-                </p>
-            </div>
-            <div class="caja">
-                <h3 class="titulo-caja">DEATMATCH</h3>
-                <p class="explicacion">
-                    Un rápido duelo a muerte todos contra todos, perfecto para practicar tu precisión en
-                    Valorant. Sin habilidades. El primer jugador en conseguir 40 asesinatos gana.</p>
-            </div>
-            <div class="caja">
-                <h3 class="titulo-caja">CARRERA DE ARMAS</h3>
-                <p class="explicacion">
-                    En éste rápido modo deatmatch por equipos, progresa a través de una serie de 12
-                    armas y habilidades con tu equipo lo más rápido que puedan. El primer equipo en completar el último
-                    nivel
-                    gana.</p>
-            </div>
-            <div class="caja">
-                <h3 class="titulo-caja">RÉPLICA</h3>
-                <p class="explicacion">
-                    Tiene las mismas reglas que el modo normal, pero todos los jugadores del mismo equipo son
-                    el mismo agente. Hay créditos fijos por ronda, el primero en ganar 5 rondas se llevará la
-                    victoria.
-                </p>
-            </div>
-            <div class="caja">
-                <h3 class="titulo-caja">PERSONALIZADA</h3>
-                <p class="explicacion">
-                    Partida personalizada con un equipo de 5 jugadores atacantes y 5 jugadores
-                    defensores. Mapa y modo a elección.</p>
+
+            <div class="row justify-content-around mb-4">
+                <div class="col-xxl-4 col-lg-4 col-md-12 justify-content-center">
+                    <div class="caja">
+                        <h3 class="titulo-caja text-center">DEATMATCH</h3>
+                        <p class="explicacion text-center">
+                            Un rápido duelo a muerte todos contra todos, perfecto para practicar tu precisión en
+                            Valorant. Sin habilidades. El primer jugador en conseguir 40 asesinatos gana.</p>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-lg-4 col-md-12 justify-content-center">
+                    <div class="caja">
+                        <h3 class="titulo-caja text-center">CARRERA DE ARMAS</h3>
+                        <p class="explicacion text-center">
+                            En éste rápido modo deatmatch por equipos, progresa a través de una serie de 12
+                            armas y habilidades con tu equipo lo más rápido que puedan.</p>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-lg-4 col-md-12 justify-content-center">
+                    <div class="caja">
+                        <h3 class="titulo-caja text-center">RÉPLICA</h3>
+                        <p class="explicacion text-center">
+                            Tiene las mismas reglas que el modo normal, pero todos los jugadores del mismo equipo son
+                            el mismo agente. Hay créditos fijos por ronda, el primero en ganar 5 rondas se llevará la
+                            victoria.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
 
     <!--AYUDA-->
-    <ul class="abajo">
-        <li><a href="./paginas/ayuda.html">Ayuda</a></li>
-    </ul>
+    <div class="abajo">
+        <span><a href="./paginas/ayuda.html">Ayuda</a></span>
+    </div>
 
     <!--Footer-->
     <footer>
@@ -102,6 +133,11 @@
             <p class="copy">Copyright &copy; 2022</p>
         </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

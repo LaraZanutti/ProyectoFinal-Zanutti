@@ -7,83 +7,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuario</title>
     <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="../index.html">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand">
                 <img src="../imagenes/logopng.png" alt="logo">
             </a>
-            <ul class="menu">
-                <li class="nav-item"><a href="../index.html">Inicio</a></li>
-                <li class="nav-item"><a href="./agentes.html">Agentes</a></li>
-                <li class="nav-item"><a href="./arsenal.html">Arsenal</a></li>
-                <li class="nav-item"><a href="./mapas.html">Mapas</a></li>
-                <li class="nav-item active"><a href="./user.html">Usuario</a></li>
-            </ul>
-        </nav>
-    </header>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center" href="../paginas/agentes.html">Agentes</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center" href="../paginas/arsenal.html">Arsenal</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center" href="../paginas/mapas.html">Mapas</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center active" href="../paginas/user.html">Usuario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <section id="principal">
         <h1>USUARIO</h1>
         <h2 class="sub">Crea una cuenta o inicia sesión</h2>
     </section>
 
-    <main>
-        <form action="" method="">
-            <fieldset class="completuser">
-                <legend class="preparate">Prepárate para jugar</legend>
+    <div class="userContainer row justify-content-center p-3">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <form action="" method="">
+                <div class="completuser">
+                    <legend class="preparate">Prepárate para jugar</legend>
 
-                <section class="completar">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" required>
-
-                    <label for="fecha">Fecha de nacimiento:</label>
-                    <input type="date" name="" id="email">
-
-                    <label for="nombre">Nombre de usuario:</label>
-                    <input type="text" id="nombre" placeholder="Ingrese su nombre de usuario" required>
-
-                    <label for="pass">Contraseña</label>
-                    <input type="password" name="pass" id="pass">
-
-                    <label for="paises">Elija un país:</label>
-                    <select name="paises" id="paises">
-                        <option value="arg">Argentina</option>
-                        <option value="chi">Chile</option>
-                        <option value="uru">Uruguay</option>
-                        <option value="col">Colombia</option>
-                        <option value="par">Paraguay</option>
-                        <option value="ecu">Ecuador</option>
-                        <option value="br">Brasil</option>
-                        <option value="bol">Bolivia</option>
-                        <option value="ven">Venezuela</option>
-                    </select>
-                </section>
-
-                <section class="finalcomplet">
-                    <div>
-                        <label for="news">Términos y Condiciones</label>
-                        <input type="checkbox" name="acepta" id="terycond">
+                    <div class="input-group mt-5">
+                        <input type="text" class="form-control" placeholder="Correo electrónico"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">@example.com</span>
                     </div>
-                    <div>
-                        <label for="news">Recibe Newsletter</label>
-                        <input type="checkbox" name="acepta" id="news">
+
+
+                    <div class="input-group mb-3 mt-5">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Username"
+                            aria-describedby="basic-addon1">
                     </div>
-                </section>
-            </fieldset>
-            <div class="submitButtonContainer">
-                <button class="glow-on-hover" type="submit" id="enviar">Enviar ahora</button>
-            </div>
-        </form>
-    </main>
+
+                    <div class="form-group mt-5">
+                        <label for="exampleInputPassword1">Elije una contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                    </div>
+
+                    <label class="fecha" for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" name="" id="fecha" class="col-12 input-group-text">
+
+                    <div class="input-group mb-3 mt-5">
+                        <label class="input-group-text" for="inputGroupSelect01">País</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Elegir</option>
+                            <option value="arg">Argentina</option>
+                            <option value="chi">Chile</option>
+                            <option value="uru">Uruguay</option>
+                            <option value="col">Colombia</option>
+                            <option value="par">Paraguay</option>
+                            <option value="ecu">Ecuador</option>
+                            <option value="br">Brasil</option>
+                            <option value="bol">Bolivia</option>
+                            <option value="ven">Venezuela</option>
+                        </select>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-8">
+                            <div class="form-check mt-5 ms-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Términos y Condiciones
+                                </label>
+                            </div>
+                            <div class="form-check ms-3 mb-5">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Recibe Newsletter
+                                </label>
+                            </div>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn-danger ">Enviar ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
 
     <!--AYUDA-->
-    <ul class="abajo">
-        <li><a href="ayuda.html">Ayuda</a></li>
-    </ul>
+    <div class="abajo">
+        <span><a href="../paginas/ayuda.html">Ayuda</a></span>
+    </div>
 
     <!--Footer-->
     <footer>
@@ -92,6 +130,9 @@
             <p class="copy">Copyright &copy; 2022</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

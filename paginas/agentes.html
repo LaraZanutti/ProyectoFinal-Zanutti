@@ -7,93 +7,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agentes</title>
     <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="../index.html">
-                <img src="../imagenes/logopng.png" alt="logo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand">
+                <img class="personaje" src="../imagenes/logopng.png" alt="logo">
             </a>
-            <ul class="menu">
-                <li class="nav-item"><a href="../index.html">Inicio</a></li>
-                <li class="nav-item active"><a href="./agentes.html">Agentes</a></li>
-                <li class="nav-item"><a href="./arsenal.html">Arsenal</a></li>
-                <li class="nav-item"><a href="./mapas.html">Mapas</a></li>
-                <li class="nav-item"><a href="./user.html">Usuario</a></li>
-            </ul>
-        </nav>
-    </header>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center active" href="./agentes.html">Agentes</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center" href="../paginas/arsenal.html">Arsenal</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center" href="../paginas/mapas.html">Mapas</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-center" href="../paginas/user.html">Usuario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <section id="principal">
         <h1>AGENTES</h1>
         <h2 class="sub">Conoce el equipo y elije tu mejor personaje</h2>
     </section>
 
-    <main>
-        <table border="1" cellpadding="5" cellspacing="5" class="tabla">
-            <tr>
-                <!--Inicio de fila-->
-                <td>Jett</td>
-                <!--celda-->
-                <img src="../imagenes/jett.png" alt="jett">
-                <td>Raze</td>
-                <img src="../imagenes/raze.png" alt="raze">
-                <td>Breach</td>
-                <img src="../imagenes/breach.png" alt="breach">
-                <td>Omen</td>
-                <img src="../imagenes/omen.png" alt="omen">
-                <td>Brimstone</td>
-                <img src="../imagenes/brimstone.png" alt="bnimstone">
-                <td>Phoenix</td>
-                <img src="../imagenes/phoenix.png" alt="phoenix">
-                <td>Sage</td>
-                <img src="../imagenes/sage.png" alt="sage">
-                <td>Sova</td>
-                <img src="../imagenes/sova.png" alt="sova">
-                <td>Viper</td>
-                <img src="../imagenes/viper.png" alt="viper">
-                <td>Cypher</td>
-                <img src="../imagenes/cypher.png" alt="cypher">
-            </tr>
-            <tr>
-                <td>Reyna</td>
-                <img src="../imagenes/reyna.png" alt="reyna">
-                <td>Killjoy</td>
-                <img src="../imagenes/killjoy.png" alt="killjoy">
-                <td>Skye</td>
-                <img src="../imagenes/skye.png" alt="skye">
-                <td>Yoru</td>
-                <img src="../imagenes/yoru.png" alt="yoru">
-                <td>Astra</td>
-                <img src="../imagenes/astra.png" alt="astra">
-                <td>Kay/o</td>
-                <img src="../imagenes/kayo.png" alt="kayo">
-                <td>Chamber</td>
-                <img src="../imagenes/chamber.png" alt="chamber">
-                <td>Neon</td>
-                <img src="../imagenes/neon.png" alt="neon">
-                <td>Fade</td>
-                <img src="../imagenes/fade.png" alt="fade">
-                <td>Harbor</td>
-                <img src="../imagenes/harbor.png" alt="harbor">
-            </tr>
-            <!--Final de fila-->
-        </table>
-    </main>
+    <div class="viperFondoTest">
+        <div class="row justify-content-around">
+            <div class="col-xl-2 col-sm-5 justify-content-center mb-5">
+                <div class="row justify-content-center">
+                    <img class="personaje" src="../imagenes/jett.png" alt="jett">
+                    <h1 class="nombrePersonaje">JETT</h1>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-5">
+                <div class="row justify-content-center mb-5">
+                    <img class="personaje" src="../imagenes/raze.png" alt="raze">
+                    <h1 class="nombrePersonaje">RAZE</h1>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-5">
+                <div class="row justify-content-center mb-5">
+                    <img class="personaje" src="../imagenes/breach.png" alt="breach">
+                    <h1 class="nombrePersonaje">BREACH</h1>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-5">
+                <div class="row justify-content-center mb-5">
+                    <img class="personaje" src="../imagenes/omen.png" alt="omen">
+                    <h1 class="nombrePersonaje">OMEN</h1>
+                </div>
+            </div>
+        </div>
 
-    <section class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/EKG3wzPf2NE" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </section>
+        <div class="row justify-content-around">
+            <div class="col-xl-2 col-sm-5">
+                <div class="row justify-content-center mb-5">
+                    <img class="personaje" src="../imagenes/brimstone.png" alt="brimstone">
+                    <h1 class="nombrePersonaje">BRIMSTONE</h1>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-5">
+                <div class="row justify-content-center mb-5">
+                    <img class="personaje" src="../imagenes/phoenix.png" alt="phoenix">
+                    <h1 class="nombrePersonaje">PHOENIX</h1>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-5">
+                <div class="row justify-content-center mb-5">
+                    <img class="personaje" src="../imagenes/sage.png" alt="sage">
+                    <h1 class="nombrePersonaje">SAGE</h1>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-5">
+                <div class="row justify-content-center mb-5">
+                    <img class="personaje" src="../imagenes/sova.png" alt="sova">
+                    <h1 class="nombrePersonaje">SOVA</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="col-xl-2 col-sm-5">
+                <div class="row justify-content-center mb-5">
+                    <img class="personaje" src="../imagenes/viper.png" alt="viper">
+                    <h1 class="nombrePersonaje">VIPER</h1>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-5">
+                <div class="row justify-content-center mb-5">
+                    <img class="personaje" src="../imagenes/cypher.png" alt="cypher">
+                    <h1 class="nombrePersonaje">CYPHER</h1>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-5">
+                <div class="row justify-content-center mb-5">
+                    <img class="personaje" src="../imagenes/reyna.png" alt="reina">
+                    <h1 class="nombrePersonaje">REINA</h1>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-5">
+                <div class="row justify-content-center mb-5">
+                    <img class="personaje" src="../imagenes/killjoy.png" alt="killjoy">
+                    <h1 class="nombrePersonaje">KILLJOY</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-around">
+                <div class="col-xl-2 col-sm-5">
+                    <div class="row justify-content-center mb-5">
+                        <img class="personaje" src="../imagenes/skye.png" alt="skye">
+                        <h1 class="nombrePersonaje">SKYE</h1>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-5">
+                    <div class="row justify-content-center mb-5">
+                        <img class="personaje" src="../imagenes/yoru.png" alt="yoru">
+                        <h1 class="nombrePersonaje">YORU</h1>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-5">
+                    <div class="row justify-content-center mb-5">
+                        <img class="personaje" src="../imagenes/astra.png" alt="astra">
+                        <h1 class="nombrePersonaje">ASTRA</h1>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-5">
+                    <div class="row justify-content-center mb-5">
+                        <img class="personaje" src="../imagenes/kayo.png" alt="kay/o">
+                        <h1 class="nombrePersonaje">KAY/O</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-around">
+                <div class="col-xl-2 col-sm-5">
+                    <div class="row justify-content-center mb-5">
+                        <img class="personaje" src="../imagenes/chamber.png" alt="chamber">
+                        <h1 class="nombrePersonaje">CHAMBER</h1>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-5">
+                    <div class="row justify-content-center mb-5">
+                        <img class="personaje" src="../imagenes/neon.png" alt="neon">
+                        <h1 class="nombrePersonaje">NEON</h1>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-5">
+                    <div class="row justify-content-center mb-5">
+                        <img class="personaje" src="../imagenes/fade.png" alt="fade">
+                        <h1 class="nombrePersonaje">FADE</h1>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-5">
+                    <div class="row justify-content-center mb-5">
+                        <img class="personaje" src="../imagenes/harbor.png" alt="harbor">
+                        <h1 class="nombrePersonaje">HARBOR</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <h2 class="newAg">NUEVO AGENTE</h2>
+        <section class="video">
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/EKG3wzPf2NE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+    </div>
+
 
     <!--AYUDA-->
-    <ul class="abajo">
-        <li><a href="ayuda.html">Ayuda</a></li>
-    </ul>
+    <div class="abajo">
+        <span><a href="../paginas/ayuda.html">Ayuda</a></span>
+    </div>
 
     <!--Footer-->
     <footer>
@@ -102,6 +210,9 @@
             <p class="copy">Copyright &copy; 2022</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

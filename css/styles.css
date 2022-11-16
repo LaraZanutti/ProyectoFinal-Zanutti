@@ -7,135 +7,45 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
-
-/*BOTONCITO COPADO*/
-.glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: 1px solid black;
-    outline: none;
-    color: #D50000;
-    background: rgb(255, 255, 255);
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-}
-
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-.glow-on-hover:active {
-    color: rgb(255, 255, 255)
-}
-
-.glow-on-hover:active:after {
-    background: transparent;
-}
-
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
-
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(255, 255, 255);
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
+body {
+    overflow-x:hidden
 }
 
 /*NAV*/
+
+.nav-link.active {
+    border-bottom: 1px solid #D50000
+}
 
 nav a img {
     height: 70px;
 }
 
-body {
-    width: 100%;
-    height: 100%;
+.nav-link {
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
 }
 
-nav {
-    width: 100%;
-    height: 80px;
-    background-color: black;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    justify-content: space-between;
-}
+.nav-link:hover {
+    transform: scale(1.15);
+    color: #D50000;
+    border-bottom: 1px solid #D50000;
 
-.nav-item a {
-    padding: 10px 15px;
-    text-decoration: none;
-    color: white;
-}
-
-.nav-item.active {
-    background-color: red;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.nav-item:hover {
-    background-color: red;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.menu .nav-item a {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    text-decoration: none;
 }
 
 #principal {
-    background-color: #1b1744;
+    background-image: linear-gradient(to bottom, rgba(18, 42, 66, .85), rgba(221, 20, 20, 0.308)),
+        url('../imagenes/valorant-juego.webp');
+    background-size: cover;
     padding: 15px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #principal h1 {
@@ -144,8 +54,8 @@ nav {
 
 /*H1*/
 h1 {
-    color: #D50000;
-    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-family: 'Anton', sans-serif;
     font-size: 50px;
     text-align: center;
 }
@@ -165,12 +75,12 @@ h1 {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: #1b1744;
     padding: 25px;
 }
 
-.abajo li a {
+.abajo span a {
     text-decoration: none;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -179,7 +89,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-.abajo li a:hover {
+.abajo span a:hover {
     color: #D50000;
 }
 
@@ -195,10 +105,14 @@ footer {
     padding-top: 25px;
 }
 
+.copy {
+    font-size: 15px;
+}
+
 /*INDEX*/
 .text {
-    color: black;
-    font-family: 'Roboto', sans-serif;
+    color: #D50000;
+    font-family: 'Anton', sans-serif;
     text-align: center;
     margin-top: 50px;
 }
@@ -209,22 +123,10 @@ footer {
     margin-top: 10px;
 }
 
-.formas {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px
-}
-
 .caja:hover {
     background-color: #D50000;
     transform: scale(1.2);
-}
-
-.caja h3:hover {
-    color: white
+    color: white;
 }
 
 .explicacion {
@@ -238,24 +140,19 @@ footer {
 
 .caja {
     box-shadow: rgba(209, 10, 10, 0.2) 0px 12px 28px 0px, rgba(107, 8, 8, 0.1) 0px 2px 4px 0px, rgba(100, 8, 8, 0.05) 0px 0px 0px 1px inset;
-    width: 50%;
-    margin: auto;
     padding: 20px;
-}
-
-.copy {
-    font-size: 15px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*AYUDA*/
-.fayuda-container {
-    background-color: bisque;
-}
-
 .fayuda {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    padding: 90px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -263,56 +160,23 @@ footer {
     gap: 1rem;
 }
 
-#multi {
-    font-size: 11px;
-}
-
-#enviar {
-    margin-top: 20px;
+.colAyuda {
+    border: 1px solid #D50000;
+    padding: 20px;
+    border-radius: 15px;
 }
 
 /*USUARIO*/
 .preparate {
     color: #D50000;
-    font-family: 'Bebas Neue', cursive;
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-size: 45px;
     text-align: center;
-    margin-bottom: 15px;
-}
-
-.completar {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 15px;
-    margin-top: 1px;
-}
-
-.completuser {
-    background-color: bisque;
-    border-radius: 0.5rem;
     padding: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 
-.finalcomplet {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    justify-content: center;
-    padding: 20px;
-}
-
-.submitButtonContainer {
-    display: flex;
-    justify-content: center;
+.fecha {
+    margin-top: 50px;
 }
 
 /*ARSENAL*/
@@ -327,8 +191,58 @@ footer {
 }
 
 /*AGENTES*/
+.viperFondoTest {
+    border-top: 5px solid black;
+    background-image: linear-gradient(to bottom, rgba(18, 42, 66, .85), rgba(221, 20, 20, 0.308)),
+        url('../imagenes/viperfondo.png');
+    background-size: cover;
+    padding: 15px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .video {
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    padding: 80px;
+    background-image: linear-gradient(to bottom, rgba(18, 42, 66, .85), rgba(221, 20, 20, 0.308)),
+        url('../imagenes/harborback.jpg');
+    padding: 15px;
+}
+
+.personaje:hover {
+    transform: scale(1.25);
+}
+
+.nombrePersonaje {
+    color: #D50000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: whitesmoke;
+    font-family: 'Anton', sans-serif;
+}
+
+.personaje:hover+.nombrePersonaje {
+    transform: scale(1.5);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: whitesmoke;
+}
+
+.newAg {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    margin-top: 60px;
+    width: 300px;
+    height: 100px;
+    background: rgb(214, 0, 0);
+    transition: width 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newAg:hover {
+    width: 1000px;
 }
