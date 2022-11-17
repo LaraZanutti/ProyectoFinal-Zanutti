@@ -10,8 +10,10 @@
     box-sizing: border-box;
 }
 
+html,
 body {
-    overflow-x:hidden
+    width: 100%;
+    height: 100%
 }
 
 /*NAV*/
@@ -75,7 +77,6 @@ h1 {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    margin-top: 20px;
     background-color: #1b1744;
     padding: 25px;
 }
@@ -106,7 +107,8 @@ footer {
 }
 
 .copy {
-    font-size: 15px;
+    font-family:'Roboto', sans-serif;
+    font-size: 11px;
 }
 
 /*INDEX*/
@@ -127,6 +129,7 @@ footer {
     background-color: #D50000;
     transform: scale(1.2);
     color: white;
+    transition-duration: 500ms;
 }
 
 .explicacion {
@@ -166,6 +169,11 @@ footer {
     border-radius: 15px;
 }
 
+.btn:hover{
+    background-color: #D50000;
+    color:white;
+}
+
 /*USUARIO*/
 .preparate {
     color: #D50000;
@@ -188,8 +196,15 @@ footer {
 
 .armas img:hover {
     transform: scale(1.15);
+    transition-duration: 600ms;
 }
 
+
+/*MAPAS*/
+.card-img-top:hover {
+    transform: scale(1.10);
+    transition-duration: 600ms;
+}
 /*AGENTES*/
 .viperFondoTest {
     border-top: 5px solid black;
@@ -204,13 +219,24 @@ footer {
 }
 
 .video {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
     padding: 80px;
-    background-image: linear-gradient(to bottom, rgba(18, 42, 66, .85), rgba(221, 20, 20, 0.308)),
-        url('../imagenes/harborback.jpg');
-    padding: 15px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .personaje:hover {
@@ -244,5 +270,5 @@ footer {
 }
 
 .newAg:hover {
-    width: 1000px;
+    width: 80%;
 }
