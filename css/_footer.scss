@@ -1,0 +1,21 @@
+footer {
+    background-color: #333234;
+    color: $color-wh;
+
+    font: {
+        family: $title-font;
+        size: 30px;
+    }
+
+    text-align: $text;
+    width: 100%;
+    height: 150px;
+    padding-top: 25px;
+
+    .copy {
+        font: {
+            family: 'Roboto', sans-serif;
+            size: 11px;
+        }
+    }
+}

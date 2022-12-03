@@ -1,0 +1,24 @@
+nav {
+    img {
+        height: 70px;
+    }
+}
+
+.nav-link {
+    letter-spacing: 2px;
+
+    font: {
+        size: 25px;
+        family: 'Bebas Neue', cursive;
+    }
+
+    &.active {
+        border-bottom: 1px solid $color-red;
+    }
+
+    &:hover {
+        transform: scale(1.15);
+        color: $color-red;
+        border-bottom: 1px solid $color-red;
+    }
+}
