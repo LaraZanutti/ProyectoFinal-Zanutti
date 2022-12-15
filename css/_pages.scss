@@ -87,19 +87,10 @@
     }
 }
 
-.armas {
-    padding: 50px;
-    @include flex-align-justify-center;
 
-    img:hover {
-        transform: scale(1.15);
-        transition-duration: 600ms;
-        border: 5px solid $color-red; 
-    }
-}
 
 .card-img-top:hover {
-    transform: scale(1.10);
+    transform: scale(1.1);
     transition-duration: 600ms;
 }
 

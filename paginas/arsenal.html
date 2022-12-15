@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arsenal</title>
-    <meta name="keywords" content="valorant, juego, online, shooter, riot games, multijugador, armas, disparos, armamento, pistolas">
+    <meta name="keywords"
+        content="valorant, juego, online, shooter, riot games, multijugador, armas, disparos, armamento, pistolas">
     <meta name="description" content="Descripción de todas las armas del juego.">
     <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -52,13 +53,973 @@
         <h2 class="sub">Elije tu mejor arma</h2>
     </section>
 
-    <main class="armas">
-        <img class="img-fluid my-4" src="../imagenes/armas-valorant.jpg" alt="armas">
-    </main>
+    <div class="row justify-content-center w-100">
+        <div class="row justify-content-center p-5">
+            <div class="col-xxl-2 mb-3 col-sm-6">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2" ></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/classic.png" class="d-block w-100" alt="classic">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5 class="">CLASSIC</h5>
+                                <p class="">Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/classicprime.webp" class="d-block w-100" alt="classicPrime">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>CLASSIC PRIME</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/classicGlitchpop.webp" class="d-block w-100"
+                                alt="classicGlitchpop">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>CLASSIC GLITCHPOP</h5>
+                                <p>Costo: 2175 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/classicForsaken.webp" class="d-block w-100"
+                                alt="classicForsaken">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>CLASSIC FORSAKEN</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-2 mb-3 col-sm-6">
+                <div id="carouselShorty" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselShorty" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselShorty" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselShorty" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselShorty" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Shorty.webp" class="d-block w-100" alt="Shorty">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>SHORTY</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/shortyRuin.webp" class="d-block w-100" alt="shortyRuin">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>SHORTY RUIN</h5>
+                                <p>Costo: Tier 20.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/shortyGenesis.webp" class="d-block w-100" alt="shortyGenesis">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>SHORTY GENESIS</h5>
+                                <p>Costo: Tier 16.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/shortyAerosol.webp" class="d-block w-100" alt="shortyAerosol">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>SHORTY AEROSOL</h5>
+                                <p>Costo: Tier 15.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselShorty"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselShorty"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-2 mb-3 col-sm-6">
+                <div id="carouselFrenzy" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselFrenzy" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselFrenzy" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselFrenzy" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselFrenzy" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Frenzy.webp" class="d-block w-100" alt="Frenzy">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>FRENZY</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/FrenzyBlastX.webp" class="d-block w-100" alt="frenzyBlastX">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>FRENZY BLASTX</h5>
+                                <p>Costo: 2175 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/FrenzyHorizon.webp" class="d-block w-100" alt="frenzyHorizon">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>FRENZY HORIZON</h5>
+                                <p>Costo: 1275 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/FrenzyLightwave.webp" class="d-block w-100"
+                                alt="frenzyLightwave">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>FRENZY LIGHTWAVE</h5>
+                                <p>Costo: Tier 50.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFrenzy"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFrenzy"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-2 mb-3 col-sm-6">
+                <div id="carouselGhost" class="carousel carousel-dark" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselGhost" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselGhost" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselGhost" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselGhost" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Ghost.webp" class="d-block w-100" alt="Ghost">
+                            <div class="d-none d-md-block text-center position-static">
+                                <h5>GHOST</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/GhostGaia's Vengeance.webp" class="d-block w-100"
+                                alt="Gaia'sVengeance">
+                            <div class="d-none d-md-block text-center position-static">
+                                <h5>GHOST GAIA'S VENGEANCE</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/ghostluxe.webp" class="d-block w-100" alt="ghostluxe">
+                            <div class=" d-none d-md-block text-center position-static">
+                                <h5>GHOST LUXE</h5>
+                                <p>Costo: 875 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/ghostTethereRealm.webp" class="d-block w-100"
+                                alt="ghostTetheredRealms">
+                            <div class=" d-none d-md-block text-center position-static">
+                                <h5>GHOST TETHERED REALMS</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGhost"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGhost"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-2 mb-3 col-sm-6">
+                <div id="carouselSheriff" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselSheriff" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselSheriff" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselSheriff" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselSheriff" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Sheriff.webp" class="d-block w-100" alt="Sheriff">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>SHERIFF</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Nebula_Sheriff.webp" class="d-block w-100" alt="Sheriff Nebula">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>SHERIFF NEBULA</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Iridian_Thorn_Sheriff.webp" class="d-block w-100"
+                                alt="Sheriff Iridian Thorn">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>SHERIFF IRIDIAN THORN</h5>
+                                <p>Costo: Tier 16.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/KTAC_Sheriff.webp" class="d-block w-100" alt="Sheriff K/TAC">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>SHERIFF K/TAC</h5>
+                                <p>Costo: Tier 01.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSheriff"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSheriff"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row p-5">
+            <div class="col-xxl-3 mb-3 col-sm-6">
+                <div id="carouselStinger" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselStinger" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselStinger" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselStinger" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselStinger" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Stinger.webp" class="d-block w-100" alt="Stinger">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>STINGER</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Doodle_Buds_Stinger.webp" class="d-block w-100"
+                                alt="Stinger Doodle Buds">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>STINGER DOODLE BUDS</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Sovereign_Stinger.webp" class="d-block w-100" alt="Stinger Sovereign">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>STINGER SOVEREIGN</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Varnish_Stinger.webp" class="d-block w-100" alt="Stinger Varnish">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>STINGER VARNISH</h5>
+                                <p>Costo: Tier 40.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselStinger"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselStinger"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-3 mb-3 col-sm-6">
+                <div id="carouselSpectre" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselSpectre" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselSpectre" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselSpectre" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselSpectre" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Spectre.webp" class="d-block w-100" alt="Spectre">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>SPECTRE</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Spline_Spectre.webp" class="d-block w-100" alt="Spectre spline">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>SPECTRE SPLINE</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Gravitational_Uranium_Neuroblaster_Spectre.webp" class="d-block w-100"
+                                alt="Spectre Gravitational Uranium Neuroblaster">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>SPECTRE GRAVITATIONAL URANIUM NEUROBLASTER</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Aero_Spectre.webp" class="d-block w-100" alt="Spectre Aero">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>SPECTRE AERO</h5>
+                                <p>Costo: Tier 10.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSpectre"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSpectre"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-3 mb-3 col-sm-6">
+                <div id="carouselBucky" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselBucky" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselBucky" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselBucky" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselBucky" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Bucky.webp" class="d-block w-100" alt="Bucky">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>BUCKY</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Prime_2.0_Bucky.webp" class="d-block w-100" alt="bucky Prime//2.0">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>BUCKY PRIME//2.0</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Artisan_Bucky.webp" class="d-block w-100" alt="Bucky Artisan">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>BUCKY ARTISAN</h5>
+                                <p>Costo: Tier 30.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Surge_Bucky.webp" class="d-block w-100" alt="Bucky Surge">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>BUCKY SURGE</h5>
+                                <p>Costo: Tier 10.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBucky"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselBucky"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-3 mb-3 col-sm-6">
+                <div id="carouselJudge" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselJudge" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselJudge" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselJudge" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselJudge" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Judge.webp" class="d-block w-100" alt="Judge">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>JUDGE</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Crimsonbeast_Judge.webp" class="d-block w-100"
+                                alt="Judge Crimsonbeast">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>JUGDE CRIMSONBEAST</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Smite_Judge.webp" class="d-block w-100" alt="Judge Smite">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>JUDGE SMITE</h5>
+                                <p>Costo: 875 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Undercity_Judge.webp" class="d-block w-100" alt="Judge Undercity">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>JUDGE UNDERCITY</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselJudge"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselJudge"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row p-5">
+            <div class="col-xxl-3 mb-3 col-sm-6">
+                <div id="carouselBulldog" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselBulldog" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselBulldog" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselBulldog" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselBulldog" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Bulldog.webp" class="d-block w-100" alt="Bulldog">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>BULLDOG</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Depths_Bulldog.webp" class="d-block w-100" alt=" Bulldog Depths">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>BULLDOG DEPTHS</h5>
+                                <p>Costo: Tier 05.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/SPECTRUM_Bulldog.webp" class="d-block w-100" alt="Bulldog Spectrum">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>BULLDOG SPECTRUM</h5>
+                                <p>Costo: 2675 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Velocity_Bulldog.webp" class="d-block w-100" alt="Bulldog Velocity">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>BULLDOG VELOCITY</h5>
+                                <p>Costo: Tier 10.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBulldog"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselBulldog"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-3 mb-3 col-sm-6">
+                <div id="carouselGuardian" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselGuardian" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselGuardian" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselGuardian" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselGuardian" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Guardian.webp" class="d-block w-100" alt="Guardian">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>Guardian</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Abyssal_Guardian.webp" class="d-block w-100" alt=" Guardian Abyssal">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>GUARDIAN ABYSSAL</h5>
+                                <p>Costo: 1275 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Hydrodip_Guardian.webp" class="d-block w-100" alt="Guardian Hydrodip">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>GUARDIAN HYDRODIP</h5>
+                                <p>Costo: Tier 20.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Nitro_Guardian.webp" class="d-block w-100" alt="Guardian Nitro">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>GUARDIAN NITRO</h5>
+                                <p>Costo: Tier 16.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGuardian"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGuardian"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-3 mb-3 col-sm-6">
+                <div id="carouselPhantom" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselPhantom" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselPhantom" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselPhantom" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselPhantom" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Phantom.webp" class="d-block w-100" alt="Phantom">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>Phantom</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Oni_Phantom.webp" class="d-block w-100" alt=" Phantom Oni">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>PHANTOM ONI</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Serenity_Phantom.webp" class="d-block w-100" alt="Phantom Serenity">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>PHANTOM SERENITY</h5>
+                                <p>Costo: Tier 25.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/BlastX_Phantom.webp" class="d-block w-100" alt="Phantom BlastX">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>Phantom BLASTX</h5>
+                                <p>Costo: 2175 Valorant Points.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhantom"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPhantom"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-3 mb-3 col-sm-6">
+                <div id="carouselVandal" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselVandal" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselVandal" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselVandal" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselVandal" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Vandal.webp" class="d-block w-100" alt="Vandal">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>Vandal</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Prime_Vandal.webp" class="d-block w-100" alt=" Vandal Prime">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>VANDAL PRIME</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Elderflame_Vandal.webp" class="d-block w-100" alt="Vandal Elderflame">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>VANDAL ELDERFLAME</h5>
+                                <p>Costo: 2475 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Winterwunderland_Vandal.webp" class="d-block w-100"
+                                alt="Vandal Winterwunderland">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>VANDAL WINTERWUNDERLAND</h5>
+                                <p>Costo: 1275 Valorant Points.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselVandal"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselVandal"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row p-5">
+            <div class="col-xxl-3 mb-3 col-sm-6">
+                <div id="carouselMarshal" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselMarshal" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselMarshal" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselMarshal" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselMarshal" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Marshal.webp" class="d-block w-100" alt="Marshal">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>Marshal</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Wasteland_Marshal.webp" class="d-block w-100"
+                                alt=" Marshal Wasteland">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>MARSHAL WASTELAND</h5>
+                                <p>Costo: 1275 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Artisan_Marshal.webp" class="d-block w-100" alt="Marshal Artisan">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>MARSHAL ARTISAN</h5>
+                                <p>Costo: Tier 10.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Songsteel_Marshal.webp" class="d-block w-100" alt="Marshal Songsteel">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>MARSHAL SONGSTEEL</h5>
+                                <p>Costo: Tier 40.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMarshal"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMarshal"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-3 mb-3 col-sm-6">
+                <div id="carouselOperator" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselOperator" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselOperator" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselOperator" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselOperator" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Operator.webp" class="d-block w-100" alt="Operator">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>Operator</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Forsaken_Operator.webp" class="d-block w-100"
+                                alt=" Operator Forsaken">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>OPERATOR FORSAKEN</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Iridian_Thorn_Operator.webp" class="d-block w-100"
+                                alt="Operator Iridian Thorn">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>OPERATOR IRIDIAN THORN</h5>
+                                <p>Costo: Tier 45.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Glitchpop_Operator.webp" class="d-block w-100"
+                                alt="Operator Glitchpop">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>OPERATOR GLITCHPOP</h5>
+                                <p>Costo: 2175 Valorant Points.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOperator"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselOperator"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-3 mb-3 col-sm-6">
+                <div id="carouselAres" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselAres" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselAres" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselAres" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselAres" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Ares.webp" class="d-block w-100" alt="Ares">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>Ares</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Sentinels_Of_Light_Ares.webp" class="d-block w-100"
+                                alt=" Ares Sentinels of Light">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>ARES SENTINELS OF LIGHT</h5>
+                                <p>Costo: 2175 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Goldwing_Ares.webp" class="d-block w-100" alt="Ares Goldwing">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>ARES GOLDWING</h5>
+                                <p>Costo: Tier 15.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Ion_Ares.webp" class="d-block w-100" alt="Ares Ion">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>ARES ION</h5>
+                                <p>Costo: 1775 Valorant Points.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAres"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselAres"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xxl-3 mb-3 col-sm-6">
+                <div id="carouselOdin" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselOdin" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselOdin" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselOdin" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselOdin" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mb-5" data-bs-interval="10000">
+                            <img src="../imagenes/Odin.webp" class="d-block w-100" alt="Odin">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>Odin</h5>
+                                <p>Costo: Gratis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5" data-bs-interval="2000">
+                            <img src="../imagenes/Sensation_Odin.webp" class="d-block w-100" alt=" Odin Sensation">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>ODIN SENSATION</h5>
+                                <p>Costo: 875 Valorant Points.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Lightwave_Odin.webp" class="d-block w-100" alt="Odin Lightwave">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>ODIN LIGHTWAVE</h5>
+                                <p>Costo: Tier 35.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item mb-5">
+                            <img src="../imagenes/Prime_2.0_Odin.webp" class="d-block w-100" alt="Odin Prime//2.0">
+                            <div class="carousel-caption d-none d-md-block text-center position-static">
+                                <h5>ODIN PRIME//2.0</h5>
+                                <p>Costo: 1175 Valorant Points.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOdin"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselOdin"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--AYUDA-->
     <div class="abajo">
-        <a  href="../paginas/ayuda.html" role="button" class="btn btn-outline-light btn-lg">Ayuda</a>
+        <a href="../paginas/ayuda.html" role="button" class="btn btn-outline-light btn-lg">Ayuda</a>
     </div>
 
     <!--Footer-->
@@ -70,8 +1031,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

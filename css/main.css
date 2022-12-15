@@ -91,18 +91,6 @@ nav img {
   margin-top: 50px;
 }
 
-.armas {
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.armas img:hover {
-  transform: scale(1.15);
-  transition-duration: 600ms;
-  border: 5px solid #D50000;
-}
-
 .card-img-top:hover {
   transform: scale(1.1);
   transition-duration: 600ms;
