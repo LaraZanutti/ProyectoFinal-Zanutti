@@ -12,6 +12,9 @@
     <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
@@ -58,46 +61,59 @@
 
     <form action="" method="">
         <!--Cards-->
-        <div class="card-group p-4">
-            <div class="card mx-2">
-                <img src="../imagenes/Iridian_Thorn_Sheriff.webp" class="card-img-top mt-4 p-5" alt="ascent">
-                <div class="card-body">
-                    <h5 class="card-title">SHERIFF IRIDIAN THORN. Precio: $10</h5>
-                </div>
-            </div>
-
-            <div class="card mx-2">
-                <img src="../imagenes/Oni_Phantom.webp" class="card-img-top mt-5 p-4" alt="bind">
-                <div class="card-body">
-                    <h5 class="card-title">PHANTOM ONI. Precio: $20 </h5>
-                </div>
-            </div>
-
-            <div class="card mx-2">
-                <img src="../imagenes/Prime_Vandal.webp" class="card-img-top mt-5 p-4" alt="breeze">
-                <div class="card-body">
-                    <h5 class="card-title">VANDAL PRIME. Precio: $20</h5>
-                </div>
-            </div>
-
-            <div class="card mx-2">
-                <img src="../imagenes/Forsaken_Operator.webp" class="card-img-top mt-5 p-4" alt="fracture">
-                <div class="card-body">
-                    <h5 class="card-title">OPERATOR FORSAKEN. Precio: $50</h5>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-1 p-2 justify-content-center ms-3 ">
-                <button type="button" onclick="comprar()" class="btn btn-outline-success btn-lg">Comprar</button>
-            </div>
-        </div>
+        <div class="card-group p-4" id="cards"></div>
 
 
-        <!--AYUDA-->
+        <!--CARRITO-->
         <div class="abajo">
-            <a href="../paginas/ayuda.html" role="button" class="btn btn-outline-light btn-lg">Ayuda</a>
+            <button id="carrito" type="button" class="btn btn-outline-light p-3 position-relative"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fa-solid fa-cart-plus fa-2x"></i>
+                <span id="cantidadCarrito"
+                    class="fs-6 position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+
+                </span>
+            </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                        <h2 id="noHay" class="text-center">No hay productos :(</h2>
+                        <table id="tabla" class="table table-hover table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio unitario</th>
+                                    <th>Precio total</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="7" id="totalCompra"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" id="btnComprar" class="btn btn-success">Comprar</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--Footer-->
@@ -112,7 +128,11 @@
             crossorigin="anonymous"></script>
 
 
-<script src="./shop.js"></script>
+        <script src="../JS/stock.js"></script>
+        <script src="../JS/renderproducts.js"></script>
+        <script src="../JS/shop.js"></script>
+        <script src="../JS/carrito.js"></script>
+
 </body>
 
 </html>
