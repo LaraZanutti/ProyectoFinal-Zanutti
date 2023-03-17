@@ -1,9 +1,10 @@
-const render = (armas) => {
+const render = async() => {
     const contenedor = document.getElementById("cards");
+
+    const armas = await armasDisponibles()
 
     armas.forEach(arma => {
         const div = document.createElement('div');
-
         div.classList.add('card');
         div.innerHTML += `
                             <img src=${arma.image} class="card-img-top p-5" />

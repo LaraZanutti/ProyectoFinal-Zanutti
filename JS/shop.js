@@ -1,1 +1,1 @@
-document.addEventListener('DOMContentLoaded', render(armasDisponibles));
+document.addEventListener('DOMContentLoaded', render());
